@@ -1,0 +1,1 @@
+all: gcc panesarLab1.c -o zero-one.exe
