@@ -1,4 +1,4 @@
-Lab 1, Making Sense of Zeroes and Ones
+Lab 1, Making Sense of Ones and Zeroes
 ======================================
 by Karanvir Panesar
 
