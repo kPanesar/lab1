@@ -105,7 +105,7 @@ void print (char *data, int decimal, int parityOdd){
 
 	//Print ASCII and Decimal
 	if(decimal < 33 || decimal == 127){
-		if(decimal == 127) printf("\t%c\t%d\t", asciiMnemonics[33], decimal);
+		if(decimal == 127) printf("\t%s\t%d\t", asciiMnemonics[33], decimal);
 		else printf("\t%s\t%d\t", asciiMnemonics[decimal], decimal);
 	}
 	else printf("\t%c\t%d\t", decimal, decimal);
