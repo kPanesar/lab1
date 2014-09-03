@@ -1,12 +1,7 @@
 #include <stdio.h>
-#include <unistd.h>
 #include <fcntl.h>
-#include <String.h>
 #include <math.h>
 
-#define MAX_LEN 128
-
-/*int readFile(int fd, char *buffer);*/
 int binaryToDecimal(char *data);
 int parityOdd(char *data);
 void print (char *data, int decimal, int parityOdd);
@@ -49,9 +44,7 @@ int main(int argc, char const *argv[])
 		}
 	}
 	else{ //No input file provided, use std	in
-		//int firstTime = 1;
 
-		//printf("Using Stdin. Please input data and press 'Enter' to submit.\n\nInput: ");
 		printf("\nOriginal\tASCII\tDecimal\tParity\tT.Error\n");
 		printf("--------\t-----\t-------\t------\t-------\n");
 
