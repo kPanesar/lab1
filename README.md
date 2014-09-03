@@ -7,9 +7,9 @@ Summary: This program reads zeroes and ones from either a text file or stdin. It
 		 the parity and determines the ASCII character associated with the decimal value. Any 
 		 non-printable character is identified by its mnemonic in accordance with man ASCII. 
 
-		 Currently, all required features function properly. The program ignores all characters 
-		 other than '0' and '1' in between sets of 8 characters for text file input. Stdin does 
-		 NOT support any spaces. 
+Currently, all required features function properly. The program ignores all characters 
+other than '0' and '1' in between sets of 8 characters for text file input. Stdin does 
+NOT support any spaces. 
 
 
 Work Log 
