@@ -94,11 +94,22 @@ int parityOdd(char *data){
 
 void print (char *data, int decimal, int parityOdd){
 	int index;
+	const char* asciiMnemonics[] = {"NUL", "SOH", "STX", "ETX", "EOT", "ENQ", 
+	"ACK", "BEL", "BS", "HT", "LF", "VT", "FF", "CR", "SO", "SI", "DLE", 
+	"DC1", "DC2","DC3","DC4", "NAK", "SYN", "ETB", "CAN", "EM", "SUB", 
+	"ESC", "FS", "GS", "RS", "US", "SPACE", "DEL"};
 
 	for (index = 0; index < 8; index++){
 		printf("%c", data[index]);
 	}
-	printf("\t%c\t%d\t", decimal, decimal);
+
+	//Print ASCII and Decimal
+	if(decimal < 33 || decimal == 127){
+		if(decimal == 127) printf("\t%c\t%d\t", asciiMnemonics[33], decimal);
+		else printf("\t%s\t%d\t", asciiMnemonics[decimal], decimal);
+	}
+	else printf("\t%c\t%d\t", decimal, decimal);
+
 	if (parityOdd == 1)
 	{
 		printf("ODD\tTRUE\n");
